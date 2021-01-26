@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="quote-container">
+      <!-- Quote -->
+      <div class="quote-text">
+        <i class="fas fa-quote-left"></i>
+        <span class="quote">
+          
+        </span>
+      </div>
+      <!-- Author -->
+      <span class="author"></span>
+      <!-- Buttons -->
+      <div class="button-container">
+        <button class="btn btn-twitter" title="Tweet this">
+          <i class="fab fa-twitter"></i>
+        </button>
+        <button class="btn btn-new-quote">New Quote</button>
+      </div>
+    </div>
+    <div class="loader"></div>
+
+    <div class="copyright"><p>
+      Created with 💛 by  <a target="_blank" href="#">mmestiyak</a>
+    </p></div>
+    <script>
+      const copyrightLinks = ['https://facebook.com/mmestiyak', 'https://twitter.com/mmestiyak', 'https://github.com/mmestiyak'];
+      const copyrightHref = copyrightLinks[Math.floor(Math.random() * copyrightLinks.length)];
+      document.querySelector('.copyright a').href = copyrightHref;
+   </script>
+    <!-- Script -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
